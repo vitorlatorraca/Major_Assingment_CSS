@@ -1,106 +1,161 @@
-/* Reset default margin and padding */
+/* Resetar margem e padding padrão */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Set basic styles */
-  body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .logo img {
-    max-width: 100px;
-  }
-  
-  h1 {
-    font-family: 'Sonsie One', cursive;
-    font-size: 36px;
-    margin-top: 10px;
-  }
-  
-  nav {
-    background-color: rgba(68, 68, 68, 0.8); /* Cor de fundo inicial com transparência */
-    padding: 10px 0;
-    position: fixed; /* Torna a navbar fixa */
-    width: 100%; /* Ocupa toda a largura da tela */
-    top: 0; /* Fixa a navbar no topo */
-    z-index: 1000; /* Garante que a navbar esteja acima de outros elementos */
-    transition: background-color 0.3s ease; /* Efeito de transição suave */
-  }
-  
-  nav.navbar-transparent {
-    background-color: rgba(68, 68, 68, 0); /* Cor de fundo transparente ao rolar */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ffd700;
-  }
-  
-  main {
-    padding-top: 70px; /* Ajusta o padding do conteúdo principal para evitar sobreposição com a navbar */
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  section {
-    padding: 40px 0;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .image-container {
-    text-align: center;
-  }
-  
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-    max-height: calc(100vh - 70px); /* Ajusta a altura máxima da imagem para preencher a tela visível, subtraindo a altura da navbar */
-    object-fit: cover; /* Faz a imagem preencher o espaço do contêiner, mantendo a proporção */
-  }
-  
-  .about p, .contact p {
-    font-size: 18px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilos para a logo no cabeçalho */
+.logo img {
+  max-width: 100px;
+}
+
+/* Estilos para o título principal */
+h1 {
+  font-family: 'Sonsie One', cursive;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+  background-color: rgba(68, 68, 68, 0.8);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para a barra de navegação transparente */
+nav.navbar-transparent {
+  background-color: rgba(68, 68, 68, 0);
+}
+
+/* Estilos para a lista de itens da navegação */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* Estilos para cada item da lista de navegação */
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Estilos para os links da navegação */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Estilos para os links da navegação quando passa o mouse */
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  padding-top: 70px;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para as seções */
+section {
+  padding: 40px 0;
+}
+
+/* Estilos para os títulos secundários */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o contêiner de imagens */
+.image-container {
+  text-align: center;
+}
+
+/* Ajustes para seis camisas em duas colunas */
+.jersey-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px; /* Adiciona um espaçamento à esquerda e à direita */
+}
+
+.jersey {
+  width: calc(33.33% - 20px); /* Define a largura de cada camisa, subtraindo o espaçamento */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.jersey img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Limita a altura da imagem */
+  object-fit: cover;
+}
+
+.jersey h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.jersey p {
+  margin: 10px 0;
+}
+
+.jersey select {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.jersey button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.jersey button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
