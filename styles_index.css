@@ -9,8 +9,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #222; /* Cor de fundo mais escura */
+  color: #fff;
 }
 
 /* Estilos para o cabeçalho */
@@ -100,56 +100,13 @@ h2 {
   text-align: center;
 }
 
-/* Ajustes para seis camisas em duas colunas */
-.jersey-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 20px; /* Adiciona um espaçamento à esquerda e à direita */
-}
-
-.jersey {
-  width: calc(33.33% - 20px); /* Define a largura de cada camisa, subtraindo o espaçamento */
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.jersey img {
-  max-width: 100%;
-  height: auto;
-  max-height: 200px; /* Limita a altura da imagem */
-  object-fit: cover;
-}
-
-.jersey h2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.jersey p {
-  margin: 10px 0;
-}
-
-.jersey select {
-  padding: 5px;
-  margin-top: 5px;
-}
-
-.jersey button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.jersey button:hover {
-  background-color: #45a049;
+/* Estilos para a imagem */
+.image-container img {
+  width: 90%; /* Ajusta a largura da imagem para ocupar 90% do contêiner */
+  max-width: 800px; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção original da imagem */
+  display: block; /* Garante que a imagem fique centralizada horizontalmente */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 
 /* Estilos para o rodapé */
