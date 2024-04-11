@@ -1,0 +1,129 @@
+/* Resetar margem e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #cdcdcd; /* Light gray background */
+    color: #333; /* Texto escuro */
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #222; /* Fundo cinza escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Estilos para a logo no cabeçalho */
+  .logo img {
+    max-width: 100px;
+  }
+  
+  /* Estilos para o título principal */
+  h1 {
+    font-family: 'Sonsie One', cursive;
+    font-size: 36px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para a barra de navegação */
+  nav {
+    background-color: rgba(68, 68, 68, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para a barra de navegação transparente */
+  nav.navbar-transparent {
+    background-color: rgba(68, 68, 68, 0);
+  }
+  
+  /* Estilos para a lista de itens da navegação */
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  /* Estilos para cada item da lista de navegação */
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Estilos para os links da navegação */
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Estilos para os links da navegação quando passa o mouse */
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Estilos para o conteúdo principal */
+  main {
+    padding-top: 70px;
+  }
+  
+  /* Estilos para o contêiner principal */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para as seções */
+  section {
+    padding: 40px 0;
+  }
+  
+  /* Estilos para os títulos secundários */
+  h2 {
+    font-size: 72px; /* Aumenta o tamanho do texto */
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Indie Flower', cursive; /* Fonte do Google */
+  }
+  
+  /* Estilos para o parágrafo */
+  p {
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada parágrafo */
+    font-size: 18px; /* Ajusta o tamanho do texto */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+  }
+  
+  /* Estilos para a imagem */
+  .image-container {
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+    margin-top: 20px; /* Adiciona espaço acima da imagem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+  }
+  
+  .image-container img {
+    max-width: 80%; /* Define a largura máxima da imagem como 80% do contêiner */
+    height: auto; /* Define a altura da imagem como automática para manter a proporção */
+    display: block; /* Permite centralizar a imagem verticalmente */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border-radius: 10px;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  

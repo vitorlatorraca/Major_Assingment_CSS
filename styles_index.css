@@ -9,8 +9,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #cdcdcd; /* Light gray background */
+  color: #333; /* Dark text color */
 }
 
 /* Estilos para o cabeçalho */
@@ -30,8 +30,8 @@ header {
   height: auto; /* Define a altura da imagem como automática para manter a proporção */
   display: block; /* Permite centralizar a imagem verticalmente */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 10px;
 }
-
 
 /* Estilos para a logo no cabeçalho */
 .logo img {
@@ -103,13 +103,11 @@ section {
 
 /* Estilos para os títulos secundários */
 h2 {
-  font-size: 32px; /* Aumenta o tamanho do texto */
+  font-size: 72px; /* Aumenta o tamanho do texto */
   margin-bottom: 20px;
   text-align: center; /* Centraliza o texto */
   font-family: 'Indie Flower', cursive; /* Fonte do Google */
 }
-
-
 
 /* Ajustes para seis camisas em duas colunas */
 .jersey-list {
@@ -133,6 +131,7 @@ h2 {
   height: auto;
   max-height: 50px; /* Reduzindo a altura da imagem */
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .jersey h2 {
@@ -173,7 +172,7 @@ footer {
 
 /* Estilos para a seção de notícias */
 .news-section {
-  background-color: #333;
+  background-color: #000; /* Altera a cor de fundo para preto */
   color: #fff;
   padding: 40px 0;
 }
@@ -202,4 +201,5 @@ footer {
   max-width: 100%;
   height: auto;
   max-height: 100px; /* Defina o tamanho máximo desejado */
+  border-radius: 10px;
 }
