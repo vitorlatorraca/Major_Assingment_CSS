@@ -9,8 +9,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: #222; /* Cor de fundo mais escura */
-  color: #fff;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Estilos para o cabeçalho */
@@ -20,6 +20,18 @@ header {
   padding: 20px 0;
   text-align: center;
 }
+
+.image-container {
+  text-align: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+.image-container img {
+  max-width: 80%; /* Define a largura máxima da imagem como 80% do contêiner */
+  height: auto; /* Define a altura da imagem como automática para manter a proporção */
+  display: block; /* Permite centralizar a imagem verticalmente */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
 
 /* Estilos para a logo no cabeçalho */
 .logo img {
@@ -91,22 +103,64 @@ section {
 
 /* Estilos para os títulos secundários */
 h2 {
-  font-size: 24px;
+  font-size: 32px; /* Aumenta o tamanho do texto */
   margin-bottom: 20px;
+  text-align: center; /* Centraliza o texto */
+  font-family: 'Indie Flower', cursive; /* Fonte do Google */
 }
 
-/* Estilos para o contêiner de imagens */
-.image-container {
+
+
+/* Ajustes para seis camisas em duas colunas */
+.jersey-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px; /* Adiciona um espaçamento à esquerda e à direita */
+}
+
+.jersey {
+  width: calc(33.33% - 20px); /* Define a largura de cada camisa, subtraindo o espaçamento */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   text-align: center;
 }
 
-/* Estilos para a imagem */
-.image-container img {
-  width: 90%; /* Ajusta a largura da imagem para ocupar 90% do contêiner */
-  max-width: 800px; /* Define a largura máxima da imagem */
-  height: auto; /* Mantém a proporção original da imagem */
-  display: block; /* Garante que a imagem fique centralizada horizontalmente */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+.jersey img {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px; /* Reduzindo a altura da imagem */
+  object-fit: cover;
+}
+
+.jersey h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.jersey p {
+  margin: 10px 0;
+}
+
+.jersey select {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.jersey button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.jersey button:hover {
+  background-color: #45a049;
 }
 
 /* Estilos para o rodapé */
@@ -115,4 +169,37 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
+
+/* Estilos para a seção de notícias */
+.news-section {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.news-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px; /* Tamanho da fonte aumentado */
+  font-family: 'Roboto', sans-serif; /* Exemplo de fonte do Google */
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.news-article {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.news-article img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px; /* Defina o tamanho máximo desejado */
 }
