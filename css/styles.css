@@ -1,0 +1,377 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-familyBasic:'Open Sans', sans-serif;
+    --font-familyMainTitle:'Sonsie One', cursive;
+    --font-familySubTitle:'Roboto', sans-serif;
+    --font-familyOther:'Roboto', sans-serif;
+    --color-darkGray: #333;
+    --color-lightGray: #cdcdcd;
+    --color-white: #fff;
+    --color-green: #45a049;
+    --color-yellow:#ffd700;
+  }
+/* ----------------------- HEADER --------------------- */
+header {
+    background-color: var(--color-darkGray);
+    color: var(--color-white);
+    padding: 20px 0;
+    text-align: center;
+}
+ 
+.logo img {
+    width:10rem;
+    align-items: center;
+}
+h1{
+  font-size: 3.5rem;
+  font-family: var(--font-familyMainTitle);
+}
+/* nav bar style */
+.nav{
+background-color: rgba(68, 68, 68, 0.8);
+padding: 10px 0;
+display: flex;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1;
+transition: background-color 0.3s ease;
+justify-content: space-between;
+}
+.nav_logo{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  }
+  
+.nav_logo img{
+width: 2rem;
+}
+      
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 28rem;
+    
+}
+      
+/* nav bar style for each item*/
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+/* nav bar style for links*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+      
+/* nav bar style for links when the user hover the mouse*/
+nav ul li a:hover {
+    color:var(--color-yellow);
+}
+      
+
+/* ----------------------- BODY ----------------------- */
+/* basics styles */
+main {
+    padding-top: 10px;
+  }
+  
+body {
+  font-family: var(--font-familyBasic);
+  line-height: 1.6;
+  background-color:var(--color-lightGray); 
+  color: var(--color-darkGray); 
+}
+  
+  .image-container {
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Define a largura máxima da imagem como 80% do contêiner */
+    height: auto; /* Define a altura da imagem como automática para manter a proporção */
+    display: block; /* Permite centralizar a imagem verticalmente */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    
+  }
+
+ h2 {
+    
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+    font-family: var(--font-familyOther); /* Fonte do Google */
+}
+/* ------------------------------------------------------ */
+/* => home page*/
+  .news_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .news_container_news{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .news-article {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    margin: 5px;
+    display: flex;
+    height: 8rem;
+  }
+  
+  .news-article:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .news-article img {
+    max-width: 10rem;  
+    border-radius: 10px;
+  }
+
+  .news-content {
+    color:var(--color-darkGray);
+    text-align: left;
+    width: 15rem;
+    margin-left: 5px;
+  }
+  .news-content h3{
+    font-family: var(--font-familyOther);  
+  }
+
+ .news-content p{
+    font-size: 0.8rem;
+  }
+  
+
+/* ------------------------------------------------------ */
+/* => products page*/
+  
+  .jersey-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px; /* Adiciona um espaçamento à esquerda e à direita */
+    
+  }
+  
+  .jersey {
+    width: 17rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--color-white) ;
+    margin: 2rem;
+    
+  }
+  
+  .jersey img {
+    max-width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .jersey h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .jersey p {
+    margin: 10px 0;
+  }
+  
+  .jersey select {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .jersey_sizes,.buy-button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 10px 20px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .jersey_sizes:hover {
+    background-color: var(--color-darkGray);
+    transition: 0.3s ease-in-out;
+  }
+
+  .buy-button:hover {
+    background-color: var(--color-darkGray);
+    transition: 0.3s ease-in-out;
+  }
+ 
+ /* ----------------------- about ----------------------- */
+.about_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* Estilos para o parágrafo */
+  .about_text {
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada parágrafo */
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+  }
+  
+  /* Estilos para a imagem */
+  .about_image-container {
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+    margin-top: 20px; /* Adiciona espaço acima da imagem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+  }
+  
+  .about_image-container img {
+    max-width: 80%; /* Define a largura máxima da imagem como 80% do contêiner */
+    height: auto; /* Define a altura da imagem como automática para manter a proporção */
+    display: block; /* Permite centralizar a imagem verticalmente */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border-radius: 10px;
+  }
+/* Estilos para a imagem */
+.about_image-container {
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+    margin-top: 20px; /* Adiciona espaço acima da imagem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+  }
+  
+.about_image-container img {
+    max-width: 80%; /* Define a largura máxima da imagem como 80% do contêiner */
+    height: auto; /* Define a altura da imagem como automática para manter a proporção */
+    display: block; /* Permite centralizar a imagem verticalmente */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   
+}
+  /* ----------------------- Contact ----------------------- */
+  .form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button[type="submit"] {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+
+  button[type="submit"]:hover {
+    background-color: var(--color-darkGray);
+  }
+  /* ----------------------- footer ----------------------- */
+  
+  footer {
+    background-color:var(--color-darkGray);
+    color:var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    
+  }
+ .footer_address{
+    font-size: 0.8rem;
+ }
+/* ----------------------- Media Query ----------------------- */
+/* Select => iphone 14pro max */
+  @media screen and (min-width: 0px){
+    h1{
+      font-size: 1.8rem; /* Aumenta o tamanho do texto */
+    }
+    h2{
+      font-size: 2.5rem; /* Aumenta o tamanho do texto */
+    }
+    .news_container_news{
+    justify-content: center;
+    }
+    .jersey-list { 
+      justify-content: center;  
+      }
+      nav ul {
+        margin-right: 0rem;
+    }
+  } 
+/* Select => bigger size */
+  @media screen and (min-width: 748px){
+    h1{
+      font-size: 2.8rem; /* Aumenta o tamanho do texto */
+    }
+    h2{
+      font-size: 3.5rem; /* Aumenta o tamanho do texto */
+    }
+    .news_container_news{
+      justify-content: space-around;
+      }
+    .jersey-list { 
+    justify-content: space-around;  
+    }
+    nav ul {
+      margin-right: 0rem;
+  }
+  } 
+
+  @media screen and (min-width: 1080px){
+    h1{
+      font-size: 2.8rem; /* Aumenta o tamanho do texto */
+    }
+    h2{
+      font-size: 3.5rem; /* Aumenta o tamanho do texto */
+    }
+    .news_container_news{
+      justify-content: space-around;
+      }
+    .jersey-list { 
+    justify-content: space-around;  
+    }
+    nav ul {
+      margin-right: 28rem;
+  }
+  }
